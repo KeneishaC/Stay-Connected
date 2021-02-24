@@ -8,7 +8,7 @@ function ChatFeed(props) {
     const chat = chats && chats[activeChat]
     console.log(chat, userName, messages)
     
-    //shows read receipts
+    //shows read receipts by form of user image
 
     const renderReadReceipts = (message, isMyMessage) => {
         return chat.people.map((person, index) => person.last_read === message.id && (
