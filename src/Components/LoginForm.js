@@ -18,7 +18,7 @@ function LoginForm() {
           localStorage.setItem('username', username)
           localStorage.setItem('password', password)
     
-          window.location.reload();
+          window.location.reload()
           setError('')
         } catch (err) {
           setError('Oops, incorrect credentials.')
