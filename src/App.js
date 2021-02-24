@@ -8,8 +8,8 @@ function App() {
      <ChatEngine 
         height='100vh'
         projectID='a1967ba2-df19-43a8-9eb7-dfb57a51dd7d'
-        userName='swekeneisha'
-        userSecret='Sjc*1993'
+        userName='happygolucky'
+        userSecret='1234'
         renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps} />}
      />
   );

@@ -7,6 +7,12 @@ function MessageForm(props) {
     const [value, setValue] = useState('')
     const { chatId, creds } = props
 
+    const handleChange = (event) => {
+        setValue(event.target.value)
+
+        isTyping(props, chatId)
+
+    }
     const handleSubmit = (event) => {
         event.preventDefault()
         const text = value.trim()
@@ -16,13 +22,7 @@ function MessageForm(props) {
         setValue('')
 
     }
-
-    const handleChange = (event) => {
-        setValue(event.target.value)
-
-        isTyping(props, chatId)
-
-    }
+    
 
     const handleUpload = (event) => {
         sendMessage(creds, chatId, { files: event.target.files, text: '' })
