@@ -6,22 +6,22 @@ function LoginForm() {
     const [error, setError] = useState('')
     const projectID = 'a1967ba2-df19-43a8-9eb7-dfb57a51dd7d'
 
-    
+
     const handleSubmit = async (e) => {
-        e.preventDefault();
+        e.preventDefault()
     
-        const authObject = { 'Project-ID': projectID, 'User-Name': username, 'User-Secret': password };
+        const authObject = { 'Project-ID': projectID, 'User-Name': username, 'User-Secret': password }
     
         try {
-          await axios.get('https://api.chatengine.io/chats', { headers: authObject });
+          await axios.get('https://api.chatengine.io/chats', { headers: authObject })
     
-          localStorage.setItem('username', username);
-          localStorage.setItem('password', password);
+          localStorage.setItem('username', username)
+          localStorage.setItem('password', password)
     
           window.location.reload();
-          setError('');
+          setError('')
         } catch (err) {
-          setError('Oops, incorrect credentials.');
+          setError('Oops, incorrect credentials.')
         }
       };
     
@@ -42,7 +42,7 @@ function LoginForm() {
           </div>
         </div>
     
-      );
+      )
 }
 
 export default LoginForm
