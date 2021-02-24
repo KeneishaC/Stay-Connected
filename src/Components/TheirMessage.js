@@ -21,7 +21,7 @@ function TheirMessage({ lastMesaage, message }) {
               />
             )
             : (
-              <div className="message" style={{ float: 'left', backgroundColor: 'rgb(204, 233, 225)', marginLeft: isFirstMessageByUser ? '4px' : '48px' }}>
+              <div className="message" style={{ float: 'left', backgroundColor: 'rgb(229, 243, 239)', marginLeft: isFirstMessageByUser ? '4px' : '48px' }}>
                 {message.text}
               </div>
             )}
