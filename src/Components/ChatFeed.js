@@ -22,12 +22,12 @@ function ChatFeed(props) {
       ));
     
       const renderMessages = () => {
-        const keys = Object.keys(messages);
+        const keys = Object.keys(messages)
     
         return keys.map((key, index) => {
-          const message = messages[key];
-          const lastMessageKey = index === 0 ? null : keys[index - 1];
-          const isMyMessage = userName === message.sender.username;
+          const message = messages[key]
+          const lastMessageKey = index === 0 ? null : keys[index - 1]
+          const isMyMessage = userName === message.sender.username
     
           return (
             <div key={`msg_${index}`} style={{ width: '100%' }}>
@@ -40,9 +40,9 @@ function ChatFeed(props) {
                 {renderReadReceipts(message, isMyMessage)}
               </div>
             </div>
-          );
-        });
-      };
+          )
+        })
+      }
     
       if (!chat) return <div />;
     
@@ -60,7 +60,7 @@ function ChatFeed(props) {
             <MessageForm {...props} chatId={activeChat} />
           </div>
         </div>
-      );
+      )
 }
 
 export default ChatFeed
