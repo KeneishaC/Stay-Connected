@@ -5,7 +5,7 @@ function LoginForm() {
     const [password, setPassword] = useState('')
 
 
-    const handleSubmit = ( e) => {
+    const handleSubmit = async ( e) => {
         e.preventDefault()
 
         
@@ -21,6 +21,7 @@ function LoginForm() {
             window.location.reload()
         } catch (error) {
             //error -> try again
+
             
         }
 
