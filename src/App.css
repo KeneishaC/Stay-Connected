@@ -157,7 +157,7 @@
   bottom: 0px;
   width: calc(100% - 36px);
   padding: 18px;
-  background-color: rgb(240, 240, 240);
+  background-color: #ffffff;
 }
 
 .message-form {
