@@ -1,13 +1,14 @@
 function MyMessage({ message }) {
     //checks to see if message contains an attachment
     if(message?.attachment?.length > 0) {
-         return
+         return (
           <img 
             src={message.attachments[0].file}
             alt='message-attachment'
             className='message-image'
             style={{float: 'right'}}
           />
+         )
     }
 
     return (
