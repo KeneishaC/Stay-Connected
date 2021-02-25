@@ -1,5 +1,5 @@
 # Stay Connected 
-### A chat application that keeps family and friends connected. Users are able to view all chat rooms they are logged into as well as share images.
+ A chat application that keeps family and friends connected. Users are able to view all chat rooms they are logged into as well as share images.
 
 ## Technologies Used
 - [React.js](https://reactjs.org/)
